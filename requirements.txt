@@ -1,0 +1,8 @@
+flask
+langchain-openai
+langgraph
+qdrant-client
+openai
+requests
+fastembed
+python-dotenv

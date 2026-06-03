@@ -1,0 +1,52 @@
+services:
+  qdrant:
+    image: qdrant/qdrant
+    container_name: qdrant
+    ports:
+      - "6333:6333"
+      - "6334:6334"
+    volumes:
+      - qdrant_data:/qdrant/storage
+    restart: unless-stopped
+
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    env_file:
+      - .env
+    container_name: book_backend
+    ports:
+      - "5000:5000"
+    depends_on:
+      - qdrant
+    volumes:
+      - ./backend:/app/backend
+      - ./prompts.py:/app/backend/prompts.py
+    environment:
+      - QDRANT_HOST=qdrant
+      - QDRANT_PORT=6333
+      - PYTHONPATH=/app/backend
+      - LANG=C.UTF-8
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    env_file:
+      - .env
+    container_name: book_frontend
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./frontend:/app/frontend
+      - ./prompts.py:/app/frontend/prompts.py
+    environment:
+      - PYTHONPATH=/app/frontend
+      - LANG=C.UTF-8
+    restart: unless-stopped
+
+volumes:
+  qdrant_data:
+    external: true
