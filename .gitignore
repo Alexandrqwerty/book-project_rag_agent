@@ -1,2 +1,29 @@
+# Local secrets; keep only the configuration example
 .env
+.env.*
+!.env.example
+
+# Python environments and generated files
+.venv/
+venv/
+env/
 __pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# Editor files and notebook autosaves
+.idea/
+.vscode/
+.ipynb_checkpoints/
+
+# Local experiments, archives, and temporary uploads
+work/
+evaluation/
+temp_upload.json
