@@ -1,0 +1,9 @@
+[tool.ruff]
+target-version = "py312"
+include = ["*.py"]
+extend-exclude = ["work", ".ipynb_checkpoints"]
+force-exclude = true
+
+[tool.ruff.lint]
+# Базовые ошибки Python/Pyflakes и единый порядок импортов.
+select = ["E4", "E7", "E9", "F", "I"]

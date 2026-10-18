@@ -1,0 +1,33 @@
+# Git metadata and local editor settings
+.git/
+.idea/
+.vscode/
+
+# Local secrets; keep the configuration example
+.env
+.env.*
+!.env.example
+
+# Python environments and generated files
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# Temporary uploaded catalog
+temp_upload.json
+work/
+evaluation/
+tests/
+*.ipynb
+PROJECT_REVIEW.md

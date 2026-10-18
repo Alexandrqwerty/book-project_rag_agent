@@ -1,8 +1,6 @@
 flask
-langchain-openai
 langgraph
-qdrant-client
+qdrant-client>=1.10,<2
 openai
 requests
-fastembed
 python-dotenv
