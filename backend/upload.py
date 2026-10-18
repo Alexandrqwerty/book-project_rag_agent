@@ -303,7 +303,7 @@ def process_book(book, record, client, progress):
 
 def add_books_from_json(file_path):
     """Проверяем весь файл, затем независимо обрабатываем и сохраняем книги."""
-    with open(file_path, "r", encoding="utf-8") as file:
+    with open(file_path, "r", encoding="utf-8-sig") as file:
         books, file_stats = prepare_catalog(json.load(file))
 
     report = {
