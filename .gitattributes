@@ -1,0 +1,2 @@
+# Frozen reports have byte-level SHA-256 checksums. Preserve line endings on checkout.
+evaluation/reference/*.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

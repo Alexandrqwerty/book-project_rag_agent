@@ -25,5 +25,6 @@ dist/
 
 # Local experiments, archives, and temporary uploads
 work/
-evaluation/
+evaluation/cache/
+evaluation/results/
 temp_upload.json

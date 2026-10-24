@@ -1,0 +1,56 @@
+[
+  {
+    "file": "before_prompt.json",
+    "dataset": "evaluation/book_search_v4.json",
+    "original_file": "20261017T092200794883Z.json",
+    "sha256": "40c38b01d3b459b4fec211dc4a24d92731670037b36d1d8b46c6c61ffaa8bbf7"
+  },
+  {
+    "file": "prompt_trial_1.json",
+    "dataset": "evaluation/book_search_v4.json",
+    "original_file": "20261017T115654115171Z.json",
+    "sha256": "53fff56c26e441f39dfbe8776f4bc8fef46a99a9b6d292096d6f17a62bf50c40"
+  },
+  {
+    "file": "prompt_trial_2.json",
+    "dataset": "evaluation/book_search_v4.json",
+    "original_file": "20261017T115744192531Z.json",
+    "sha256": "625ee9a93e67bfff153721b653d7df148b4b7433e3a78a6dd28f9afcb641a4b7"
+  },
+  {
+    "file": "prompt_trial_3.json",
+    "dataset": "evaluation/book_search_v4.json",
+    "original_file": "20261017T115906808947Z.json",
+    "sha256": "1132585b53b5e31f3db41a9f60878291d2565e2d0eacb2de909cb7323302a678"
+  },
+  {
+    "file": "context_comparison.json",
+    "dataset": "evaluation/book_search_v4.json",
+    "original_file": "20261017T120049701464Z.json",
+    "sha256": "dc96aa148cb80749f5f0c9199816a2823e246d202d2f0e381d7ff06987717bb8"
+  },
+  {
+    "file": "stability.json",
+    "dataset": "evaluation/book_search_v4.json",
+    "original_file": "20261017T122520586155Z.json",
+    "sha256": "0d27c8088c1f9a4becece368c1fbad93993fb54d4ef605213d04245142024494"
+  },
+  {
+    "file": "thinking.json",
+    "dataset": "evaluation/book_search_v4.json",
+    "original_file": "20261017T132332202008Z.json",
+    "sha256": "984f94ecc41784e1bc419ba5fd2c881f34e22d6952649a37dc20d46700c9a065"
+  },
+  {
+    "file": "additional_queries.json",
+    "dataset": "evaluation/book_search_batch_03.json",
+    "original_file": "20261017T133257120086Z.json",
+    "sha256": "48be69dbf863fd44b9a45469be5fcd1592fc3553de43111485482f918b8662cf"
+  },
+  {
+    "file": "explicit_year.json",
+    "dataset": "evaluation/book_search_year_explicit.json",
+    "original_file": "20261017T135250227666Z.json",
+    "sha256": "13b785fe001027f312279b23457a250f003e6e73ded2a3a18645ae416ed94e6a"
+  }
+]
